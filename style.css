@@ -3,6 +3,10 @@
     src: url(idroid.otf);
 
 }
+@font-face {
+    font-family: Poppins-Thin;
+    src: url(Poppins-Thin.ttf);
+}
 @import url('https://fonts.googleapis.com/css2? family= Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 & display=swap');
 
 @font-face{
@@ -18,14 +22,16 @@
     --cor4:#1A5C37;
     --cor5:#063d1e; 
 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrao: 'Poppins-Thin',cursive;
     --fonte-destaque:'Comic Neue', cursive;
     --fonte-android:'Android', cursive;
 }
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+   
+  
+    
 }
 header{
     font-family:var(--fonte-android);
@@ -55,32 +61,35 @@ header>nav>a{
     color: white;
     text-decoration: none;
     padding: 10px;
+    padding-top: 5px;
     
 }
 header>nav>a:hover{
     
     background-color: rgb(99, 186, 99);
-    border-radius: 5px;
+    border-radius: 10px;
     transition-duration: 0.5s;
+
 } 
 
 body{
     background-color: #C5EBD6;
     margin-top: 0%;
     margin: 0px;
+    overflow-x: hidden;
 }
 main>article>h1{
-    font-family: var(--fonte-android);
+    font-family:var(--fonte-android);
     color: var(--cor4);
     
 }
-main>p{
-    font-family:var(--fonte-padrao);
+main>article>p{
+    font-family: var(--fonte-padrao);
     
 }
 main>article>h2{
     background-image:linear-gradient(to right, rgba(87, 159, 87, 0.409) ,white);
-    font-family: idroid;
+    font-family:var(--fonte-android);
     color: var(--cor4);
     border-radius: 5px;
     padding: 5px 5px 5px 13px;
@@ -136,7 +145,7 @@ h3{
     color: white;
 }
 .Mais{
-    padding: 10px;
+   
     border: 5px;
     background-color: rgb(198, 235, 248);
     border-radius: 10px;;
