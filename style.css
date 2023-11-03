@@ -25,9 +25,10 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 header{
-    font-family:var(--fonte-destaque);
+    font-family:var(--fonte-android);
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(60, 215, 130),rgb(26, 92, 56));
     background-color: var(--cor4);
@@ -135,6 +136,7 @@ h3{
     color: white;
 }
 .Mais{
+    padding: 10px;
     border: 5px;
     background-color: rgb(198, 235, 248);
     border-radius: 10px;;
@@ -162,15 +164,16 @@ footer>p>a{
 footer>p>a:hover{
     font-weight: bold;
 }
-main>p>a{
-    color: green;
+main>a{
+    color: rgb(0, 96, 0);
     font-weight: bold;
 }
-.Mais>p>a{
-    color: green;
+.link{
+    background-color: #2FA866;
+    color: #063d1e;
     font-weight: bold;
+}
 
-}
 .imagens{
     text-align: center;
 }
